@@ -1,0 +1,219 @@
+/* --------- FOR LAYOUT --------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* --------- FOR SECTIONS --------- */
+.section1, .section2{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.section1 {background: #fff;}
+.section2 {background: #f3f3f3;}
+
+/* --------- FOR SECTION 1 HEADER --------- */
+.section1 header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 150px;
+    width: 100%;
+    
+    background-color: #fff;
+    z-index: 2;
+}
+
+.section1 header ul {
+    gap: 25px;
+    display: flex;    
+    list-style: none;
+}
+
+.section1 header ul li a{
+    text-decoration: none;
+    color: red;
+}
+
+.section1 header a .logo {
+    height: 125px;
+    width: 125px;
+}
+
+/* --------- FOR SECTION 1 BODY --------- */
+.section1 .circle {
+    position: absolute;
+    bottom: -350px;
+    right: -335px;
+    width: 800px;
+    height: 800px;
+    border-radius: 1000px;
+    background: #ff0000;
+ 
+    z-index: 1;
+}
+
+.section1 .content {
+    position: relative;
+    left: -300px;
+    bottom: -175px;
+    z-index: 2;
+    max-width: 500px;
+}
+
+
+.section1 .content h1 {
+    font-size: 3rem;
+    color: #222;
+}
+
+.section1 .content p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.section1 .content button {
+    background: #ff0000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.section1 .can {
+    position: absolute;
+    right: 3%;
+    bottom: 5%;
+    width: 450px;
+    height: 525px;
+    z-index: 1;
+}
+
+/* --------- FOR SECTION 2 HEADER --------- */
+.section2 header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;    
+    height: 125px;
+    width: 100%;
+    
+    background: #f3f3f3;
+    z-index: 2;
+}
+
+.section2 header h1{    
+    text-decoration: none;
+    color: red;
+}
+
+/* --------- FOR SECTION 2 BODY --------- */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    
+    gap: 1.5%;
+}
+
+.card1, .card2, .card3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 600px;
+    width: 375px;
+    transition: 0.3s;
+    overflow: hidden;
+
+    box-shadow: 0px 2px 10px rgb(231, 195, 195);
+    border-radius: 15px;
+
+    background-color: rgb(255, 239, 239);
+}
+
+.card1:hover, .card2:hover, .card3:hover{
+    position: relative;
+    transform: translatey(-5px);
+    box-shadow: 0px 2px 10px 2px rgb(255, 149, 149);
+
+}
+
+.card1 .top, .card2 .top, .card3 .top{
+    height: 1%;
+    width: 100%;
+    background-color: red;
+}
+
+.card1 img, .card2 img, .card3 img{
+    height: 69%;
+}
+
+.card1 .bottom, .card2 .bottom, .card3 .bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 5% 5%;
+    height: 30%;
+    width: 100%;
+    gap: 5%;
+    background-color: rgb(255, 255, 255);
+}
+
+.card1 .bottom div, .card2 .bottom div, .card3 .bottom div{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 12.5%;
+    width: 100%;
+    padding: 0 3%;
+    border-radius: 25px;
+
+    font-size: 80%;
+    font-weight: bold;
+    color: red;
+    background-color: rgb(255, 239, 239);
+}
+
+.card1 .bottom h2, .card2 .bottom h2, .card3 .bottom h2{
+    font-size: 20px
+}
+
+.card1 .bottom p, .card2 .bottom p, .card3 .bottom p{
+    align-items: center;
+    justify-content: center;
+    font-size: 13.5px;
+    color: #646464;
+}
+
+.card1 .bottom button, .card2 .bottom button, .card3 .bottom button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
+
+    border-radius: 10px;
+    border-color: red;
+    font-weight: bold;
+    color: white;
+    background-color: #ff0000;
+}
